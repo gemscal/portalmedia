@@ -55,6 +55,7 @@ Route::get('post/{post?}','Article\PostController@post')->name('post');
 Route::post('comments/{post_id}', ['uses' => 'Article\CommentsController@store', 'as' => 'comments.store']);
 
 //LUZEL IS LOVEEEEEEEE
+//ALRIGHT
 
 Share::page('http://portalmedia.mtics.net', 'Blog Trends')
   ->facebook()
