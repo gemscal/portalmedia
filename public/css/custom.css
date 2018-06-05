@@ -1,0 +1,589 @@
+
+/* -----Custom css----- */
+
+/* Reset defaults */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body, div, article, section, main,
+footer, header, form, fieldset, legend, pre,
+code, a, h1, h2, h3, h4, h5, h6, p, ul,
+ol, li, dl, dt, dd, textarea, table, td,
+th, tr, input[type="email"],
+input[type="number"], input[type="password"],
+input[type="tel"], input[type="text"] {
+   box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Global */
+body {
+    background-color: #fff;
+}
+
+.row {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clr {
+    clear: both;
+}
+
+@font-face {
+    font-family: ancient;
+    src: url('/fonts/Ancient.ttf');
+}
+
+@font-face {
+    font-family: lora-reg;
+    src: url('/fonts/Lorareg.ttf');
+}
+
+@font-face {
+    font-family: lora-bold;
+    src: url('/fonts/Lorabold.ttf');
+}
+
+@font-face {
+    font-family: lora-italic;
+    src: url('/fonts/Loraitalic.ttf');
+}
+
+@font-face {
+    font-family: roboto-reg;
+    src: url('/fonts/Robotoreg.ttf');
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url('/fonts/Robotobold.ttf');
+}
+
+input[type = text] {
+    width: 100%;
+	padding: 5px 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+input[type = email] {
+    width: 100%;
+	padding: 5px 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+input[type = password] {
+    width: 100%;
+	padding: 5px 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+input[type = password] {
+    width: 100%;
+	padding: 5px 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+input[type = file] {
+    background-color: #00ff4e1f;
+	padding: 5px 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 10px;
+	border-radius: 3px;
+    font-family: lora-reg;
+    font-size: 13px;
+}
+
+textarea {
+    width: 100%;
+	padding: 5px 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+::-webkit-input-placeholder {
+	color: rgba(0, 0, 0, .4);
+	letter-spacing: 1px;
+	font-family: lora-reg;
+    font-size: 12px;
+}
+
+.form-err-new {
+    color: #ff0000;
+}
+
+/* Header */
+.hearder-strip {
+    height: 45px;
+    background-color: #fff;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 35px -10px rgba(0, 0, 0, 0.12);
+}
+
+.h-article-logo {
+    color: #000;
+    line-height: 25px;
+    font-family: ancient;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.h-content-right {
+    width: 50%;
+    font-family: lora-reg;
+}
+
+.sign-up {
+    font-size: 13px;
+    border: 1px solid #000;
+    padding: 5px 15px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+    color: #000;
+}
+
+.sign-up:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.sign-in {
+    line-height: 25px;
+    font-size: 14px;
+    margin-right: 10px;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.uname {
+    color: #4688f6;
+}
+
+/* Content KV part */
+.key-visual {
+    height: 250px;
+    background-image: url('/img/kv.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.featured-article {
+    font-family: ancient;
+    letter-spacing: 1px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.spacer {
+    height: 10px;
+    width: 100%;
+}
+
+.spacer-line {
+    height: 1px;
+    width: 100%;
+    background-color: #ededed;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.lft-mar {
+    margin-left: 0px;
+    padding-right: 20px;
+}
+
+.article-title {
+    font-family: roboto-bold;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 5px;
+    color: #292929;
+    transition: color 0.3s
+}
+
+.article-title:hover {
+    color: #4688f6;
+}
+
+.article-content {
+    color: #757575;
+    line-height: 20px;
+    font-family: lora-reg;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.article-writer {
+    font-family: roboto-reg;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+.article-date {
+    font-family: lora-reg;
+    font-size: 12px;
+    color: #757575;
+    letter-spacing: 1px;
+}
+
+/* Form Design */
+
+.login-box {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 40px 50px 40px 50px;
+    box-shadow: 3px 3px 35px -10px rgba(0, 0, 0, 0.12);
+    margin-top: 130px;
+}
+
+#for-login {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form-lbl-logreg {
+    font-family: lora-reg;
+    font-size: 14px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rem-log {
+    font-family: roboto-reg;
+    font-size: 12px;
+    color: #7a7a7a;
+}
+
+.login-but-new {
+    border: 1px solid #000;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 7px 0px;
+    font-size: 13px;
+    border-radius: 3px;
+    font-family: lora-reg;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.login-with-ggl {
+    background-color: #E2082A;
+    display: block;
+    padding: 8px 0px;
+    font-size: 13px;
+    font-family: lora-reg;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: background-color 0.3s
+}
+
+.login-with-ggl:hover {
+    background-color: #ff0000;
+}
+
+
+/* Post part */
+
+.post-image {
+    margin: 0px auto;
+}
+
+.post-title {
+    text-align: center;
+    font-family: lora-reg;
+    font-weight: normal;
+    margin-bottom: 13px;
+}
+
+.post-date {
+    text-align: center;
+    font-family: roboto-reg;
+    font-size: 12px;
+    color: #b2b2b2;
+    margin-bottom: 20px;
+}
+
+.post-creator {
+    color: #4688f6;
+}
+
+.post-content {
+    line-height: 23px;
+    font-size: 17px;
+}
+
+.post-comment {
+    letter-spacing: 1px;
+    font-family: roboto-reg;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+    color: #b2b2b2;
+    padding-bottom: 20px;
+}
+
+.comment-loog {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.comment-user {
+    font-family: lora-reg;
+    color:#4688f6;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.comment-dot {
+    color: #b2b2b2;
+}
+
+.comment-date {
+    color: #000;
+    font-size: 11px;
+    font-family: roboto-reg;
+}
+
+.comment-content {
+    text-indent: 20px;
+    font-family: roboto-reg;
+    font-size: 13px;
+}
+
+.comment-submit {
+    padding: 8px 10px;
+    float: right;
+    border-radius: 3px;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    font-family: lora-reg;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment-submit:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+article {
+    padding: 30px 0px;
+}
+
+.comment-error {
+    border: 1px solid #ff2d4e;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #ff00001f;
+    border-radius: 2px;
+    font-family: lora-reg;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.comment-success {
+    border: 1px solid #02b01f;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #00ff4e1f;
+    border-radius: 2px;
+    font-family: lora-reg;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+/* Footer */
+.footer-container {
+    background-color: #e3e3e3;
+    margin-top: 50px;
+}
+
+.footer-content {
+    padding: 40px 0px;
+}
+
+.disclaimer {
+    font-family: lora-reg;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.project-owner {
+    color: #4688f6;
+}
+
+/* Gallery */
+.gallery-name {
+    font-family: lora-reg;
+    color: #4688f6;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.gallery-photos {
+    margin: 0px auto;
+    display: block;
+    transition: box-shadow 0.3s;
+}
+
+.uploading-form-part {
+    margin-top: 20px;
+}
+
+.gallery-photos:hover {
+    box-shadow: 3px 3px 35px -5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Pagination  */
+
+ul.pagination li {
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+ul.pagination li a {
+
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 4px;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    padding: 8px 8px;
+    margin: 4px;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+ul.pagination li.active {
+    /*background-color: #4CAF50;*/
+    background-color: #687282;
+    padding: 8px 8px;
+    margin: 4px;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+/*ul.pagination li a:hover:not(.active) {background-color: #ddd;}*/
+ul.pagination li a:hover {background-color: #999999;}
+
+ul.pagination li.disabled {
+    /*background-color: #cccccc;*/
+    color: #ddd;
+    padding: 8px 8px;
+    border: 1px solid #ddd;
+    margin: 4px;
+}
+
+
+/* Social Media Buttons */
+.ss-facebook {
+    padding: 5px 10px;
+    border: 1px solid #4267b2;
+    border-radius: 2px;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-family: lora-reg;
+    font-size: 13px;
+    background-color: #4267b2;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.ss-facebook:hover {
+    background-color: #002e8a;
+}
+
+.ss-twitter  {
+    padding: 5px 10px;
+    border: 1px solid #55adee;
+    border-radius: 2px;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-family: lora-reg;
+    font-size: 13px;
+    background-color: #55adee;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.ss-twitter:hover {
+    background-color: #007ad4;
+}
+
+.ss-googleplus {
+    padding: 5px 10px;
+    border: 1px solid #dc493c;
+    border-radius: 2px;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-family: lora-reg;
+    font-size: 13px;
+    background-color: #dc493c;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.ss-googleplus:hover {
+    background-color: #bc0f00;
+}
+
+.ss-share {
+    margin-top: 15px;
+    margin-bottom: 13px;
+    font-family: roboto-reg;
+    font-size: 13px;
+}
